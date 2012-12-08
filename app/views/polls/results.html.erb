@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<%= @question.text %>
+</p>
+
+  <% @choices.each do |choice| %>
+  <p>
+  	<%= "#{choice.text}: #{choice.count}" %>
+  </p>
+  <% end %>
